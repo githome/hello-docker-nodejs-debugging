@@ -1,0 +1,11 @@
+version: "2"
+
+services:
+  web:
+    build: .
+    command: nodemon --debug=9229
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - "8000:8000"
+      - "9229:9229"
